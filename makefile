@@ -4,7 +4,7 @@ SFMLFLAGS=-lsfml-graphics -lsfml-window -lsfml-system
 EXEC=VeCtorPP.bin
 
 CPPVERSION=17
-FILES=main.cpp Point.cpp
+FILES=main.cpp Point.cpp Vector.cpp
 
 all: clear compil run
 

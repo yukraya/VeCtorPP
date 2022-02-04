@@ -7,6 +7,7 @@
 
 class Point
 {
+    friend class Vector;
     public:
         //*Construcotrs & Destructors
         explicit Point(int x, int y = 0, int z = 0);
@@ -21,12 +22,16 @@ class Point
         friend Point operator-(Point lhs, Point const &rhs);
 
         //*Methods
+        const int& x() const;
+        const int& y() const;
+        const int& z() const;
+
         void drawPoint() const; //!DEBUG
     private:
         //*Integrated Methods
 
-        //*Attributes
-        std::array<int, 3> coordinates;
+        //*Attributess
+        std::array<int, 3> m_coordinates;
 };
 
 #endif //POINT_HPP

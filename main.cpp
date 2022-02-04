@@ -1,15 +1,15 @@
 #include <iostream>
 
-#include "Point.hpp"
+#include "Vector.hpp"
 
 int main(/*int argc, char const *argv[]*/)
 {
-    Point p1(5, 2, 3);
-    Point p2(2, 4, 9);
-    Point p3 (p2 - p1);
+    Point A(5, 2, 3);
+    Point B(2, 4, 9);
 
-    p3.drawPoint();
+    Vector v1(A, B);
 
-    std::cout << "Hello World!" << std::endl;
+    v1.drawVector();
+
     return 0;
 }
