@@ -3,9 +3,9 @@
 //*Constructors & Destrucotr
 Vector::Vector(int vx, int vy, int vz)
 {
-    m_coordinates[1] = vx;
-    m_coordinates[2] = vy;
-    m_coordinates[3] = vz;
+    m_coordinates[0] = vx;
+    m_coordinates[1] = vy;
+    m_coordinates[2] = vz;
 }
 
 Vector::Vector(Point const &a, Point const &b)
